@@ -52,7 +52,7 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-
+static uint32_t counterM7_u32;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -74,7 +74,7 @@ int main(void)
 /* USER CODE END Boot_Mode_Sequence_0 */
 
 /* USER CODE BEGIN Boot_Mode_Sequence_1 */
-  /* Wait until CPU2 boots and enters in stop mode or timeout*/
+  /* Wait until CPU2 - i.e. Cortex M4  boots and enters in stop mode or timeout*/
   timeout = 0xFFFF;
   while((__HAL_RCC_GET_FLAG(RCC_FLAG_D2CKRDY) != RESET) && (timeout-- > 0));
   if ( timeout < 0 )
@@ -125,9 +125,13 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  HAL_GPIO_TogglePin(Green_led_GPIO_Port, Green_led_Pin);
+	  counterM7_u32++;
+	  HAL_Delay(800);
   }
   /* USER CODE END 3 */
 }
@@ -194,9 +198,21 @@ void SystemClock_Config(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(Green_led_GPIO_Port, Green_led_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : Green_led_Pin */
+  GPIO_InitStruct.Pin = Green_led_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(Green_led_GPIO_Port, &GPIO_InitStruct);
 
 }
 
