@@ -1,49 +1,21 @@
-19:28:37 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM4 ****
+22:08:49 **** Incremental Build of configuration Debug for project 2_HSEMCoreDev_CM7 ****
 make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM4.elf 
+arm-none-eabi-size   2_HSEMCoreDev_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-   4340	     24	   1576	   5940	   1734	1_MCoreDev_CM4.elf
+  19508	     24	   1712	  21244	   52fc	2_HSEMCoreDev_CM7.elf
 Finished building: default.size.stdout
  
-19:39:24 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM4 ****
+22:08:57 **** Incremental Build of configuration Debug for project 2_HSEMCoreDev_CM7 ****
 make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM4.elf 
+arm-none-eabi-size   2_HSEMCoreDev_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-   4340	     24	   1576	   5940	   1734	1_MCoreDev_CM4.elf
+  19508	     24	   1712	  21244	   52fc	2_HSEMCoreDev_CM7.elf
 Finished building: default.size.stdout
  
-19:39:24 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM7 ****
+22:08:57 **** Incremental Build of configuration Debug for project 2_HSEMCoreDev_CM4 ****
 make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM7.elf 
+arm-none-eabi-size   2_HSEMCoreDev_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
-   7812	     24	   1576	   9412	   24c4	1_MCoreDev_CM7.elf
-Finished building: default.size.stdout
- 
-19:40:17 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM4 ****
-make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4340	     24	   1576	   5940	   1734	1_MCoreDev_CM4.elf
-Finished building: default.size.stdout
- 
-19:46:01 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM4 ****
-make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4340	     24	   1576	   5940	   1734	1_MCoreDev_CM4.elf
-Finished building: default.size.stdout
- 
-19:46:01 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM7 ****
-make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7812	     24	   1576	   9412	   24c4	1_MCoreDev_CM7.elf
-Finished building: default.size.stdout
- 
-19:46:28 **** Incremental Build of configuration Debug for project 1_MCoreDev_CM4 ****
-make -j12 all 
-arm-none-eabi-size   1_MCoreDev_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4340	     24	   1576	   5940	   1734	1_MCoreDev_CM4.elf
+  16284	     36	   1716	  18036	   4674	2_HSEMCoreDev_CM4.elf
 Finished building: default.size.stdout
  
