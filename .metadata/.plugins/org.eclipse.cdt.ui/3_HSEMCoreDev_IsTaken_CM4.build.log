@@ -1,0 +1,10 @@
+23:15:06 **** Incremental Build of configuration Debug for project 3_HSEMCoreDev_IsTaken_CM4 ****
+make -j12 all 
+arm-none-eabi-size   3_HSEMCoreDev_IsTaken_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16360	     56	   1720	  18136	   46d8	3_HSEMCoreDev_IsTaken_CM4.elf
+Finished building: default.size.stdout
+ 
+
+23:15:06 Build Finished. 0 errors, 0 warnings. (took 313ms)
+
