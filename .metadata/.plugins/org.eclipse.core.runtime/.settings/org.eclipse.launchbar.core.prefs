@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:3_HSEMCoreDev_IsTaken_CM4 Debug,org.eclipse.launchbar.core.descriptorType.default\:3_HSEMCoreDev_IsTaken_CM7 Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_HSEMCoreDev_PeripheralManagement_CM4 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_HSEMCoreDev_PeripheralManagement_CM7 Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_MCoreDev_CM4\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_MCoreDev_CM4\ Debug/activeLaunchTarget=null\:---
@@ -10,6 +10,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_HSEMCoreDev/activeLaunchMode=
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_HSEMCoreDev/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_HSEMCoreDev_CM4\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_HSEMCoreDev_CM4\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_HSEMCoreDev_PeripheralManagement_CM4\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_HSEMCoreDev_PeripheralManagement_CM4\ Debug/activeLaunchTarget=null\:---
 org.eclipse.launchbar.core.descriptorType.default\:1_MCoreDev_CM7\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:1_MCoreDev_CM7\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:2_HSEMCoreDev/activeLaunchMode=run
@@ -18,3 +20,7 @@ org.eclipse.launchbar.core.descriptorType.default\:2_HSEMCoreDev_CM7\ Debug/acti
 org.eclipse.launchbar.core.descriptorType.default\:2_HSEMCoreDev_CM7\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:3_HSEMCoreDev_IsTaken_CM7\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:3_HSEMCoreDev_IsTaken_CM7\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:4_HSEMCoreDev_PeripheralManagement_CM4\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:4_HSEMCoreDev_PeripheralManagement_CM4\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:4_HSEMCoreDev_PeripheralManagement_CM7\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:4_HSEMCoreDev_PeripheralManagement_CM7\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

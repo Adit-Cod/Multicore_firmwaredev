@@ -1,0 +1,10 @@
+22:25:50 **** Incremental Build of configuration Debug for project 4_HSEMCoreDev_PeripheralManagement_CM7 ****
+make -j12 all 
+arm-none-eabi-size   4_HSEMCoreDev_PeripheralManagement_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19840	     32	   1712	  21584	   5450	4_HSEMCoreDev_PeripheralManagement_CM7.elf
+Finished building: default.size.stdout
+ 
+
+22:25:50 Build Finished. 0 errors, 0 warnings. (took 335ms)
+

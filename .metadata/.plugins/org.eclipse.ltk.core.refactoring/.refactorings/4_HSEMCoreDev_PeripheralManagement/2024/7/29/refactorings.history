@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;4_HSEMCoreDev_PeripheralManagement/3_HSEMCoreDev_IsTaken.ioc&apos; to &apos;4_HSEMCoreDev_PeripheralManagement.ioc&apos;" description="Rename resource &apos;3_HSEMCoreDev_IsTaken.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="3_HSEMCoreDev_IsTaken.ioc" name="4_HSEMCoreDev_PeripheralManagement.ioc" stamp="1721351640546" updateReferences="true"/>
+</session>
