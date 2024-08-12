@@ -50,8 +50,12 @@ MEMORY
   RAM_D2 (xrw)   : ORIGIN = 0x30000000, LENGTH = 288K
   RAM_D3 (xrw)   : ORIGIN = 0x38000000, LENGTH = 64K
   ITCMRAM (xrw)  : ORIGIN = 0x00000000, LENGTH = 64K
+  OPENAMP_RSC_TABLE (xrw) : ORIGIN: 0x38000000, LENGTH = 1k
+  OPENAMP_SH_MEMORY (xrw) : ORIGIN: 0x38000400, LENGTH = 63k 
 }
 
+__OPENAMP_REGION_START__ = ORIGIN(OPENAMP_SH_MEMORY);
+__OPENAMP_REGION_END__   = ORIGIN(OPENAMP_SH_MEMORY) + LENGTH(OPENAMP_SH_MEMORY);
 /* Sections */
 SECTIONS
 {
@@ -175,7 +179,13 @@ SECTIONS
     . = . + _Min_Stack_Size;
     . = ALIGN(8);
   } >RAM_D1
-
+   
+  .openamp_section(NOLOAD) :
+  {
+     . ABSOLUTE(0x38000000);
+     *(.resource_table)
+  } >OPENAMP_RSC_TABLE AT > FLASH
+  
   /* Remove information from the compiler libraries */
   /DISCARD/ :
   {
