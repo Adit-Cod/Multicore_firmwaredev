@@ -1737,3 +1737,84 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-19 22:20:41.029
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui 2 0 2024-08-08 22:14:55.962
+!MESSAGE Save Failed
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-08-08 22:15:20.266
+!MESSAGE An internal error occurred during: "Code Update".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+!SESSION 2024-08-11 18:00:32.821 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-11 18:00:42.327
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-11 18:00:42.391
+!MESSAGE Log4j initialized with config file C:\Ad_Docs\embedded_sys\multicore\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-11 18:00:50.519
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-11 18:04:49.816
+!MESSAGE Indexed '5_HSEM_OpenAMP_CM4' (46 sources, 146 headers) in 20 sec: 9,612 declarations; 64,155 references; 6 unresolved inclusions; 124 syntax errors; 2,710 unresolved names (3.5%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-08-11 18:05:18.954
+!MESSAGE An internal error occurred during: "Update Monitor".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1797)
+	at java.base/java.util.HashMap.putVal(HashMap.java:626)
+	at java.base/java.util.HashMap.put(HashMap.java:607)
+	at java.base/java.util.ListResourceBundle.loadLookup(ListResourceBundle.java:204)
+	at java.base/java.util.ListResourceBundle.handleKeySet(ListResourceBundle.java:168)
+	at java.base/java.util.ResourceBundle.containsKey(ResourceBundle.java:2305)
+	at java.base/sun.util.locale.provider.LocaleResources.getDecimalFormatSymbolsData(LocaleResources.java:190)
+	at java.base/java.text.DecimalFormatSymbols.initialize(DecimalFormatSymbols.java:628)
+	at java.base/java.text.DecimalFormatSymbols.<init>(DecimalFormatSymbols.java:113)
+	at java.base/sun.util.locale.provider.DecimalFormatSymbolsProviderImpl.getInstance(DecimalFormatSymbolsProviderImpl.java:85)
+	at java.base/java.text.DecimalFormatSymbols.getInstance(DecimalFormatSymbols.java:180)
+	at java.base/sun.util.locale.provider.NumberFormatProviderImpl.getInstance(NumberFormatProviderImpl.java:183)
+	at java.base/sun.util.locale.provider.NumberFormatProviderImpl.getNumberInstance(NumberFormatProviderImpl.java:149)
+	at java.base/java.text.NumberFormat.getInstance(NumberFormat.java:921)
+	at java.base/java.text.NumberFormat.getInstance(NumberFormat.java:907)
+	at java.base/java.text.NumberFormat.getInstance(NumberFormat.java:488)
+	at java.base/java.text.MessageFormat.subformat(MessageFormat.java:1293)
+	at java.base/java.text.MessageFormat.format(MessageFormat.java:885)
+	at java.base/java.text.Format.format(Format.java:158)
+	at java.base/java.text.MessageFormat.format(MessageFormat.java:860)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager.getMonitorMessage(PDOMManager.java:1230)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob$ProgressUpdateJob.run(PDOMIndexerJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-08-11 18:05:34.572
+!MESSAGE An internal error occurred during: "Code Update".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-08-11 18:06:38.270
+!MESSAGE Error while parsing /5_HSEM_OpenAMP_CM7/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c.
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getMaskedException(AbstractIndexerTask.java:1206)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.swallowError(AbstractIndexerTask.java:1192)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1128)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:910)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+Root exception:
+java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-11 18:07:41.009
+!MESSAGE Indexed '5_HSEM_OpenAMP_CM7' (50 sources, 157 headers) in 171 sec: 10,125 declarations; 61,960 references; 0 unresolved inclusions; 41 syntax errors; 49 unresolved names (0.068%)
